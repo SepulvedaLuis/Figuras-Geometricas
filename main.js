@@ -15,12 +15,44 @@ console.groupEnd();
 // Código del triangulo
 console.group("Triangulos");
 
-function perimetroTrinagulo(lado1, lado2, base){
+function perimetroTriangulo(lado1, lado2, base){
     return lado1 + lado2 + base;
 }
 
 function areaTriangulo(base, altura){
     return (base * altura) / 2;
+}
+
+function calcularPerimetroTriangulo(){
+    const div = document.getElementById("respuesta");
+    const lado1Trinagulo = document.getElementById("lado1Trinagulo");
+    const lado1 = parseFloat(lado1Trinagulo.value);
+    const lado2Trinagulo = document.getElementById("lado2Trinagulo");
+    const lado2 = parseFloat(lado2Trinagulo.value);
+    const baseTrinagulo = document.getElementById("baseTrinagulo");
+    const base = parseFloat(baseTrinagulo.value);
+
+    const perimetro = perimetroTriangulo(lado1, lado2, base);
+
+    const p = document.createElement("p");
+    p.innerHTML = `Perímetro: <b>${perimetro}</b> `;
+    div.append(p);
+
+}
+
+function calcularAreaTrinagulo(){
+    const div = document.getElementById("respuesta");
+    const baseTrinagulo = document.getElementById("baseTrinagulo");
+    const base = parseFloat(baseTrinagulo.value);
+    const alturaTrinagulo = document.getElementById("alturaTrinagulo");
+    const altura = parseFloat(alturaTrinagulo.value);
+
+    const area = areaTriangulo(base, altura);
+
+    const p = document.createElement("p");
+    p.innerHTML = `Perímetro: <b>${area}</b> `;
+    div.append(p);
+    
 }
 console.groupEnd();
 // Código del triangulo
@@ -51,18 +83,26 @@ console.groupEnd();
 
 // Aquí interatuamos con el HTML
 
+
+
+
 function calcularPerimetroCuadrado(){
+    const div = document.getElementById("respuesta");
     const input = document.getElementById("InputCuadrado");
-    const value = input.value;
-    
+    const value = parseFloat(input.value);
+
     const perimetro = perimetroCuadrado(value);
-    alert (perimetro);
+    const p = document.createElement("p");
+    p.innerHTML = `Perímetro: <b>${perimetro}</b> `;
+    div.append(p);
 }
 function calcularAreaCuadrado(){
+    const div = document.getElementById("respuesta");
     const input = document.getElementById("InputCuadrado");
-    const value = input.value;
+    const value = parseFloat(input.value);
 
     const area = areaCuadrado(value);
-    alert(area);
-
+    const p = document.createElement("p");
+    p.innerHTML = `Área: <b>${area}</b> `;
+    div.append(p);
 }
