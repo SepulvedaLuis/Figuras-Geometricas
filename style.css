@@ -87,7 +87,9 @@ h3 {
     text-align: center;
 }
 label {
-    font-size: 15px;
+    text-align: center;
+    font-size: 18px;
+    margin-bottom: 10px;
 }
 button {
     border: none;
@@ -100,7 +102,6 @@ button {
     margin: 10px 0 5px 0;
 }
 button:hover {
-    /* color: rgba(255, 255, 255, 1); */
     box-shadow: 0 4px 16px rgba( 150, 255 , 255, 1);
     transition: all 0.5s ease;
 }
@@ -110,4 +111,33 @@ button:hover {
 }
 .respuesta p{
     margin-bottom: 5px;
+}
+
+@media only screen and (max-width: 600px) {
+    .container {
+        flex-direction: column;
+    } 
+    .cuadrado {
+        width: inherit;
+        margin:0 20px 10px 20px;
+    }
+    .triangulo {
+        width: inherit;
+        margin:0 20px 10px 20px;
+
+    }
+    .circulo {
+        width: inherit;
+        margin:0 20px 10px 20px;
+
+    }    
+    header h1 {
+        font-size: 25px;
+    }
+    header h1:hover {
+        font-size: 32px;
+    }
+    section h2 {
+        font-size: 20px;
+    }
 }
