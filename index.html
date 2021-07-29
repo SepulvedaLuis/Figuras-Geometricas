@@ -21,62 +21,68 @@
         <div class="container">
             <div class="cuadrado">
                 <h3>Cuadrado</h3>
-                <form action="">
-                    <label for="InputCuadrado">
-                        Escribe cuanto mide cada lado de tu cuadrado: 
-                    </label>
-                    <input id="InputCuadrado" type="number" placeholder="lado" />
-                    <button type="button" onclick="calcularPerimetroCuadrado()">
-                        Calcular Perímetro
-                    </button>
-                    <button type="button" onclick="calcularAreaCuadrado()">
-                        Calcular Área
-                    </button>
-                    <div id="respuestaCuadrado">
-        
-                    </div>
-                </form>
+                
+                <label for="InputCuadrado">
+                    Escribe cuanto mide cada lado de tu cuadrado: 
+                </label>
+                <input id="InputCuadrado" type="number" placeholder="lado" />
+                <button type="button" onclick="calcularPerimetroCuadrado()">
+                    Calcular Perímetro
+                </button>
+                <button type="button" onclick="calcularAreaCuadrado()">
+                    Calcular Área
+                </button>
+                <div class="respuesta" id="respuestaCuadrado">
+    
+                </div>
+               
             </div>
 
             <div class="triangulo">
                 <h3>Triángulo</h3>
-                <form action="">
-                    <label for="InputTrinagulo">
-                        Escribe cuanto mide cada lado de tu cuadrado: 
-                    </label>
-                    <input id="lado1Trinagulo" type="number" placeholder="Lado1" />
-                    <input id="lado2Trinagulo" type="number" placeholder="lado2" />
-                    <input id="baseTrinagulo" type="number" placeholder="base" />
-                    <input id="alturaTrinagulo" type="number" placeholder="altura" />
-                    <button type="button" onclick="calcularPerimetroTriangulo()">
-                        Calcular Perímetro
-                    </button>
-                    <button type="button" onclick="calcularAreaTrinagulo()">
-                        Calcular Área
-                    </button>
-                    <div id="respuestaTriangulo">
-        
+                
+                <label for="InputTrinagulo">
+                    Escribe cuanto mide cada lado de tu cuadrado: 
+                </label>
+                <div class="filas">
+                    <div class="fila1">
+                        <input id="lado1Trinagulo" type="number" placeholder="Lado1" />
+                        <input id="lado2Trinagulo" type="number" placeholder="lado2" />
                     </div>
-                </form>
+                    <div class="fila2">
+                        <input id="baseTrinagulo" type="number" placeholder="base" />
+                        <input id="alturaTrinagulo" type="number" placeholder="altura" />
+                    </div>
+                </div>
+                <button type="button" onclick="calcularPerimetroTriangulo()">
+                    Calcular Perímetro
+                </button>
+                <button type="button" onclick="calcularAreaTrinagulo()">
+                    Calcular Área
+                </button>
+                <div class="respuesta" id="respuestaTriangulo">
+    
+                </div>
+               
             </div>
 
             <div class="circulo">
                 <h3>Círculo</h3>
-                <form action="">
-                    <label for="RadioCirculo">
-                        Escribe cuanto mide cada lado de tu cuadrado: 
-                    </label>
-                    <input id="RadioCirculo" type="number" placeholder="radio" />
-                    <button type="button" onclick="calcularPerimetroCirculo()">
-                        Calcular Perímetro
-                    </button>
-                    <button type="button" onclick="calcularAreaCirculo()">
-                        Calcular Área
-                    </button>
-                    <div id="respuestaCirculo">
-        
-                    </div>
-                </form>
+            
+                <label for="RadioCirculo">
+                    Escribe cuanto mide cada lado de tu cuadrado: 
+                </label>
+                <input id="RadioCirculo" type="number" placeholder="radio" />
+                <button type="button" onclick="calcularPerimetroCirculo()">
+                    Calcular Perímetro
+                </button>
+                <button type="button" onclick="calcularAreaCirculo()">
+                    Calcular Área
+                </button>
+                <div class="respuesta" id="respuestaCirculo">
+    
+                </div>
+                
             </div>
         </div>
     </section>
