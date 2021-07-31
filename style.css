@@ -9,3 +9,25 @@ input[type=number] {
     -moz-appearance:textfield; /* Firefox */
 }
 
+.footer {
+    background: grey;
+}
+.footer h5 {
+    text-align: center;
+    font-size: 18px;
+    padding-top: 10px;
+}
+.footer nav ul{
+    display: flex;
+    justify-content: center;
+}
+.footer nav ul li {
+    margin: 0 30px; 
+    margin-bottom: 10px;
+    list-style-type: none;
+}
+.footer nav ul li a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+}
