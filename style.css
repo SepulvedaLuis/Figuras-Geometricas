@@ -3,6 +3,9 @@
     padding: 0;
     margin: 0;
 }
+body {
+    background: grey;
+}
 input::-webkit-outer-spin-button,
 input::-webkit-inner-spin-button {
     /* display: none; <- Crashes Chrome on hover */
@@ -21,6 +24,12 @@ input {
     padding-left: 10px;
     margin: 10px 0;
     outline: none;
+    background: lightgrey;
+}
+input:focus {
+    background: white;
+    width: 120px;
+    height: 25px;
 }
 header {
     background-color: #c3c3c3;
@@ -29,28 +38,29 @@ header {
 header h1 {
     padding: 25px 0;
     text-align: center;
+    transition: font-size .8s;
 }
 header h1:hover {
     font-size: 40px;
 }
 section {
     padding: 15px 0; 
-    background-color: grey;
     height: 100%;
 }
 section h2 {
     text-align: center;
-    padding: 10px 0 20px 0;
+    padding: 25px 0;
 }
 .container {
     display: flex;
+    margin-top: 20px;
     
 }
 .cuadrado {
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 5px 8px;
+    padding: 20px 8px;
     background-color: #c2c2c2;
     margin: 0 5px;
     border:none;
@@ -62,7 +72,7 @@ section h2 {
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 5px 8px;
+    padding: 20px 8px;
     background-color: #c2c2c2;
     margin: 0 5px;
     border:none;
@@ -74,7 +84,7 @@ section h2 {
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 5px 8px;
+    padding: 20px 8px;
     background-color: #c2c2c2;
     margin: 0 5px;
     border: none;
@@ -133,6 +143,7 @@ button:hover {
     }    
     header h1 {
         font-size: 25px;
+        transition: font-size .8s;
     }
     header h1:hover {
         font-size: 32px;
