@@ -145,6 +145,27 @@ button:hover {
     font-weight: bold;
 }
 
+@media only screen and (max-width: 800px){
+    h2 {
+        font-size: 20px;
+    }
+    h3 {
+        font-size: 16px;
+    }
+    label {
+        font-size: 15px;
+    }
+    .filas {
+        display: flex;
+    }
+    .filas .fila1 input {
+        width: 80px;
+    }
+    .filas .fila2 input {
+        width: 80px;
+    }
+}
+
 @media only screen and (max-width: 600px) {
     .container {
         flex-direction: column;
