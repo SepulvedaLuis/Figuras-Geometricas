@@ -100,7 +100,7 @@ function calcularAreaTrinagulo(){
     const area = areaTriangulo(base, altura);
 
     const p = document.createElement("p");
-    p.innerHTML = `Perímetro: <b>${area}</b> `;
+    p.innerHTML = `Área: <b>${area}</b> `;
     div.append(p); 
 }
 function calcularPerimetroCirculo(){
@@ -120,6 +120,6 @@ function calcularAreaCirculo(){
 
     const area = areaCirculo(radio);
     const p = document.createElement("p");
-    p.innerHTML = `Perímetro: <b>${area}</b> `;
+    p.innerHTML = `Área: <b>${area}</b> `;
     div.append(p);
 }
